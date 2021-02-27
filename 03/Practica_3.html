@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Practica_3</title>
+</head>
+<body>
+ <h1>Reserva de sociedad</h1>
+ <p>Rellena el siguiente formulario para reservar la sociedad para un día en concreto</p>
+ <form>
+    <fieldset>
+    <legend>Datos del usuario:</legend>
+    Nombre: <input type="text"><br>
+    <p>¿Eres socio?</p>
+    <input type="radio" name="Socio" value="Si">Si, soy socio
+    <input type="radio" name="Socio" value="No">No, no soy socio<br><br>
+    Email: <input type="text"><br><br>
+    Contraseña: <input type="text"><br><br>
+    </fieldset>
+    <fieldset>
+    <legend>Datos de la reserva:</legend>
+    Edad:
+    <select id="groups" name="groups">
+        <optgroup label="Edad">
+        <option>Menor de 18</option>
+        <option>Mayor de 18</option>
+        <option>Mayor de 65</option>
+        </optgroup>
+    </select>
+    <p>Selecciona la fecha y hora de reserva:</p>
+    <input type="date" name="fecha" value="dd/mm/aaaa">
+    <input type="time" name="hora" value="--:--"><br><br>
+    
+    </fieldset>
+   </form>
+</body>
+</html>
